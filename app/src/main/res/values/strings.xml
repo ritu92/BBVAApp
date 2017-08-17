@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BBVAApp</string>
+    <string name="str_list_tv">  BBVA: Best Private Bank in Spain</string>
+
+
+    <string name="title_activity_home">BBVA Map Locations</string>
+</resources>

@@ -1,0 +1,45 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/coordinatorLayout"
+    tools:context="com.example.malik.bbvaapp.activities.HomeActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:weightSum="100"
+        tools:context="com.example.malik.bbvaapp.activities.HomeActivity"
+        android:id="@+id/maps_frame">
+
+    <LinearLayout
+        android:id="@+id/fragMapView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:orientation="horizontal">
+        <fragment
+            android:id="@+id/mapFragment"
+
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.malik.bbvaapp.activities.HomeActivity" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fragListView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="#F000" >
+
+        <fragment
+            android:id="@+id/fragment_banklist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.malik.bbvaapp.fragments.LocationListFragment"></fragment>
+    </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
